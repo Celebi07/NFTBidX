@@ -18,7 +18,7 @@ export default function HotCollections() {
           data-aos="fade-right"
           data-aos-delay="50"
           data-aos-once>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit amet.
+          Explore our exclusive collections of digital art, music, and more. Discover unique NFTs that you can own and trade, each crafted with creativity and passion by talented artists from around the world.
         </p>
         <Link
           data-aos="fade-left"
@@ -30,7 +30,7 @@ export default function HotCollections() {
         </Link>
       </div>
       <div className="mt-5 flex justify-between gap-5 flex-wrap max-md:flex-col items-center">
-        <div className="border border-white/50 flex flex-col gap-3 p-5 rounded-sm w-full max-w-[300px] relative" data-aos="fade-up"data-aos-once>
+        <div className="border border-white/50 flex flex-col gap-3 p-5 rounded-sm w-full max-w-[300px] relative" data-aos="fade-up" data-aos-once>
           <Image
             src={"/images/c1.png"}
             alt="collection image"
@@ -59,9 +59,9 @@ export default function HotCollections() {
             />
           </div>
           <div className="flex justify-between items-center mt-2">
-            <h5 className="text-xl">Art Item</h5>
+            <h5 className="text-xl">TaskTrack</h5> {/* Updated name */}
             <button className="px-7 py-1 rounded-sm bg-gradient-to-r from-indigo-500 to-pink-500 hover:opacity-80">
-              35+ item
+              35+ items
             </button>
           </div>
           <Image
@@ -72,7 +72,7 @@ export default function HotCollections() {
             className="absolute left-1/2 -translate-x-1/2 top-56"
           />
         </div>
-        <div className="border border-white/50 flex flex-col gap-3 p-5 rounded-sm w-full max-w-[300px] relative" data-aos="fade-up"data-aos-once>
+        <div className="border border-white/50 flex flex-col gap-3 p-5 rounded-sm w-full max-w-[300px] relative" data-aos="fade-up" data-aos-once>
           <Image
             src={"/images/c2.png"}
             alt="collection image"
@@ -101,9 +101,9 @@ export default function HotCollections() {
             />
           </div>
           <div className="flex justify-between items-center mt-2">
-            <h5 className="text-xl">Art Item</h5>
+            <h5 className="text-xl">CodeCrafters</h5> {/* Updated name */}
             <button className="px-7 py-1 rounded-sm bg-gradient-to-r from-indigo-500 to-pink-500 hover:opacity-80">
-              35+ item
+              35+ items
             </button>
           </div>
           <Image
@@ -114,7 +114,7 @@ export default function HotCollections() {
             className="absolute left-1/2 -translate-x-1/2 top-56"
           />
         </div>
-        <div className="border border-white/50 flex flex-col gap-3 p-5 rounded-sm w-full max-w-[300px] relative" data-aos="fade-up"data-aos-once>
+        <div className="border border-white/50 flex flex-col gap-3 p-5 rounded-sm w-full max-w-[300px] relative" data-aos="fade-up" data-aos-once>
           <Image
             src={"/images/c3.png"}
             alt="collection image"
@@ -143,9 +143,9 @@ export default function HotCollections() {
             />
           </div>
           <div className="flex justify-between items-center mt-2">
-            <h5 className="text-xl">Art Item</h5>
+            <h5 className="text-xl">BugBounty</h5> {/* Updated name */}
             <button className="px-7 py-1 rounded-sm bg-gradient-to-r from-indigo-500 to-pink-500 hover:opacity-80">
-              35+ item
+              35+ items
             </button>
           </div>
           <Image
@@ -156,7 +156,7 @@ export default function HotCollections() {
             className="absolute left-1/2 -translate-x-1/2 top-56"
           />
         </div>
-        <div className="border border-white/50 flex flex-col gap-3 p-5 rounded-sm w-full max-w-[300px] relative" data-aos="fade-up"data-aos-once>
+        <div className="border border-white/50 flex flex-col gap-3 p-5 rounded-sm w-full max-w-[300px] relative" data-aos="fade-up" data-aos-once>
           <Image
             src={"/images/c4.png"}
             alt="collection image"
@@ -185,9 +185,9 @@ export default function HotCollections() {
             />
           </div>
           <div className="flex justify-between items-center mt-2">
-            <h5 className="text-xl">Art Item</h5>
+            <h5 className="text-xl">DevDocs</h5> {/* Updated name */}
             <button className="px-7 py-1 rounded-sm bg-gradient-to-r from-indigo-500 to-pink-500 hover:opacity-80">
-              35+ item
+              35+ items
             </button>
           </div>
           <Image

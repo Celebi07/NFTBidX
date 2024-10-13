@@ -31,22 +31,33 @@ export default function SellNFTForm() {
   };
 
   // Handle form submission
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    
-    // Simulate form submission logic (e.g., sending data to an API)
-    console.log("NFT Data Submitted:", nftData);
-    
-    // Set submitted state to true
-    setIsSubmitted(true);
-
-    // Redirect after a delay to show the success message
-    setTimeout(() => {
-      // Redirect to the landing page (e.g., "/")
-      router.push("/");
-    }, 2000); // Redirect after 2 seconds
+    console.log(nftData);
+    try {
+      const response = await fetch('/api/nft', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(nftData),
+      });
+      
+      const result = await response.json();
+  
+      if (result.success) {
+        setIsSubmitted(true);
+        setTimeout(() => {
+          router.push('/');
+        }, 2000); // Redirect after 2 seconds
+      } else {
+        console.error('Error:', result.message);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
   };
-
+  
   return (
     <section className="flex justify-center items-center p-10 bg-[#110229]">
       {isSubmitted ? (

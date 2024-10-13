@@ -10,9 +10,9 @@ export default function HowItWorks() {
           How it Works
         </h2>
         <p className="text-white/50" data-aos="fade-right" data-aos-delay="120" data-aos-once>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit amet. Lorem
-          ipsum dolor sit amet, consecte adipiscing elit ipsum.
-        </p>
+  Explore how our platform makes it easy to engage with digital art and collectibles in the form of NFTs. Join the revolution of ownership and creativity!
+</p>
+
         <Link href="/nfts">
           <button className="px-7 py-2 rounded-sm bg-gradient-to-r from-indigo-500 to-pink-500 hover:opacity-80">
             Learn More
@@ -38,8 +38,9 @@ export default function HowItWorks() {
                 </button>
               </Link>
               <p className="text-white/70">
-                Lorem ipsum dolor sit amet, consectetur at adipiscing elit amet.
-              </p>
+  Create a secure wallet to store your NFTs and manage your digital assets effectively.
+</p>
+
             </div>
           </div>
           <div className="rounded-sm p-px bg-gradient-to-r from-indigo-500 via-pink-500">
@@ -59,8 +60,9 @@ export default function HowItWorks() {
                 </button>
               </Link>
               <p className="text-white/70">
-                Lorem ipsum dolor sit amet, consectetur at adipiscing elit amet.
-              </p>
+  Discover and purchase unique NFT collections from various artists and creators.
+</p>
+
             </div>
           </div>
         </div>
@@ -82,8 +84,9 @@ export default function HowItWorks() {
                 </button>
               </Link>
               <p className="text-white/70">
-                Lorem ipsum dolor sit amet, consectetur at adipiscing elit amet.
-              </p>
+  List your digital creations on our marketplace and connect with collectors worldwide.
+</p>
+
             </div>
           </div>
           <div className="rounded-sm p-px bg-gradient-to-r from-indigo-500 via-pink-500">
@@ -103,8 +106,9 @@ export default function HowItWorks() {
                 </button>
               </Link>
               <p className="text-white/70">
-                Lorem ipsum dolor sit amet, consectetur at adipiscing elit amet.
-              </p>
+  Upload your digital art and set it up for sale, becoming a part of the NFT community.
+</p>
+
             </div>
           </div>
         </div>

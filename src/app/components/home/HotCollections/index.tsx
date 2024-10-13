@@ -18,7 +18,7 @@ export default function HotCollections() {
           data-aos="fade-right"
           data-aos-delay="50"
           data-aos-once>
-          Explore our exclusive collections of digital art, music, and more. Discover unique NFTs that you can own and trade, each crafted with creativity and passion by talented artists from around the world.
+          Explore the hottest project collections on the marketplace. From innovative digital designs to complex tech creations, find the most sought-after NFTs here.
         </p>
         <Link
           data-aos="fade-left"
@@ -59,14 +59,14 @@ export default function HotCollections() {
             />
           </div>
           <div className="flex justify-between items-center mt-2">
-            <h5 className="text-xl">TaskTrack</h5> {/* Updated name */}
+            <h5 className="text-xl">Innovative Art Projects</h5>
             <button className="px-7 py-1 rounded-sm bg-gradient-to-r from-indigo-500 to-pink-500 hover:opacity-80">
-              35+ items
+              35+ projects
             </button>
           </div>
           <Image
             src={"/images/user1.png"}
-            alt="collection image"
+            alt="creator image"
             width={60}
             height={60}
             className="absolute left-1/2 -translate-x-1/2 top-56"
@@ -101,14 +101,14 @@ export default function HotCollections() {
             />
           </div>
           <div className="flex justify-between items-center mt-2">
-            <h5 className="text-xl">CodeCrafters</h5> {/* Updated name */}
+            <h5 className="text-xl">Tech Project Hub</h5>
             <button className="px-7 py-1 rounded-sm bg-gradient-to-r from-indigo-500 to-pink-500 hover:opacity-80">
-              35+ items
+              45+ projects
             </button>
           </div>
           <Image
             src={"/images/user2.png"}
-            alt="collection image"
+            alt="creator image"
             width={60}
             height={60}
             className="absolute left-1/2 -translate-x-1/2 top-56"
@@ -143,14 +143,14 @@ export default function HotCollections() {
             />
           </div>
           <div className="flex justify-between items-center mt-2">
-            <h5 className="text-xl">BugBounty</h5> {/* Updated name */}
+            <h5 className="text-xl">Digital Innovation</h5>
             <button className="px-7 py-1 rounded-sm bg-gradient-to-r from-indigo-500 to-pink-500 hover:opacity-80">
-              35+ items
+              25+ projects
             </button>
           </div>
           <Image
             src={"/images/user3.png"}
-            alt="collection image"
+            alt="creator image"
             width={60}
             height={60}
             className="absolute left-1/2 -translate-x-1/2 top-56"
@@ -185,14 +185,14 @@ export default function HotCollections() {
             />
           </div>
           <div className="flex justify-between items-center mt-2">
-            <h5 className="text-xl">DevDocs</h5> {/* Updated name */}
+            <h5 className="text-xl">Creative Design Works</h5>
             <button className="px-7 py-1 rounded-sm bg-gradient-to-r from-indigo-500 to-pink-500 hover:opacity-80">
-              35+ items
+              40+ projects
             </button>
           </div>
           <Image
             src={"/images/user4.png"}
-            alt="collection image"
+            alt="creator image"
             width={60}
             height={60}
             className="absolute left-1/2 -translate-x-1/2 top-56"

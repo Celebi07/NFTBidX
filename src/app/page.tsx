@@ -26,7 +26,7 @@ export default function Home() {
             </button>
             <button className="rounded-sm p-px bg-gradient-to-r from-indigo-500 to-pink-500">
               <div className="bg-[#110229] rounded-[calc(0.125rem-1px)] px-7 py-2 hover:bg-opacity-80">
-                Create
+                Start Creating
               </div>
             </button>
           </div>
@@ -37,11 +37,11 @@ export default function Home() {
             </div>
             <div className="flex flex-col justify-between">
               <span className="text-4xl">27K+</span>
-              <span className="text-white/70">Unique Artworks</span>
+              <span className="text-white/70">Digital Assets</span>
             </div>
             <div className="flex flex-col justify-between">
               <span className="text-4xl">3.5K+</span>
-              <span className="text-white/70">Talented Artists</span>
+              <span className="text-white/70">Creators</span>
             </div>
           </div>
         </div>

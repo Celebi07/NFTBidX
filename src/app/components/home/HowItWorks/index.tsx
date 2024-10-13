@@ -10,9 +10,9 @@ export default function HowItWorks() {
           How it Works
         </h2>
         <p className="text-white/50" data-aos="fade-right" data-aos-delay="120" data-aos-once>
-  Explore how our platform makes it easy to engage with digital art and collectibles in the form of NFTs. Join the revolution of ownership and creativity!
-</p>
-
+          Start trading and selling digital projects as NFTs on our marketplace.
+          Our platform makes it easy to set up, buy, and sell NFTs, giving you a secure and transparent way to manage digital assets.
+        </p>
         <Link href="/nfts">
           <button className="px-7 py-2 rounded-sm bg-gradient-to-r from-indigo-500 to-pink-500 hover:opacity-80">
             Learn More
@@ -38,9 +38,8 @@ export default function HowItWorks() {
                 </button>
               </Link>
               <p className="text-white/70">
-  Create a secure wallet to store your NFTs and manage your digital assets effectively.
-</p>
-
+                Connect your digital wallet to our platform to start trading and managing your NFT projects seamlessly.
+              </p>
             </div>
           </div>
           <div className="rounded-sm p-px bg-gradient-to-r from-indigo-500 via-pink-500">
@@ -60,9 +59,8 @@ export default function HowItWorks() {
                 </button>
               </Link>
               <p className="text-white/70">
-  Discover and purchase unique NFT collections from various artists and creators.
-</p>
-
+                Explore and purchase exclusive NFT projects from our collection. Find the perfect digital assets to add to your portfolio.
+              </p>
             </div>
           </div>
         </div>
@@ -84,9 +82,8 @@ export default function HowItWorks() {
                 </button>
               </Link>
               <p className="text-white/70">
-  List your digital creations on our marketplace and connect with collectors worldwide.
-</p>
-
+                List your projects as NFTs and start earning by selling your digital assets to a global audience.
+              </p>
             </div>
           </div>
           <div className="rounded-sm p-px bg-gradient-to-r from-indigo-500 via-pink-500">
@@ -96,7 +93,7 @@ export default function HowItWorks() {
                   src={"/images/icon4.png"}
                   alt="icon4"
                   width={200}
-                  height={200} 
+                  height={200}
                   quality={100}
                 />
               </span>
@@ -106,9 +103,8 @@ export default function HowItWorks() {
                 </button>
               </Link>
               <p className="text-white/70">
-  Upload your digital art and set it up for sale, becoming a part of the NFT community.
-</p>
-
+                Upload and mint your projects into NFTs, making them available for trade and sale in our marketplace.
+              </p>
             </div>
           </div>
         </div>

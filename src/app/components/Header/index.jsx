@@ -44,7 +44,7 @@ const Header = () => {
                     <Link
                       className="px-5 py-2 hover:opacity-80 bg-gradient-to-r from-indigo-500 to-pink-500 transition-colors rounded-sm transition"
                       href={"/"}>
-                      Sing Up
+                      Sign Up
                     </Link>
                     <Link
                       className="px-5 py-2 hover:text-pink-500 transition-colors"

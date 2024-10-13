@@ -11,7 +11,7 @@ export default function TopSeller() {
           Top Seller
         </h2>
         <Link
-          data-aos="fade-left" data-aos-once
+         data-aos="fade-left" data-aos-once
           href={"/"}
           className="flex gap-2 items-center hover:text-pink-500 transition">
           View All <FaArrowRight />

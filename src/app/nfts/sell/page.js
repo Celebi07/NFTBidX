@@ -3,15 +3,18 @@
 import React, { useState } from "react";
 import { useRouter } from "next/navigation"; // Import useRouter for redirection
 
-export default function SellNFTForm() {
+export default function SellProjectForm() {
   // State to manage form input
-  const [nftData, setNftData] = useState({
+  const [projectData, setProjectData] = useState({
     title: "",
     description: "",
-    imageUrl: "",
+    projectUrl: "",
     price: "",
     royalties: "",
     category: "",
+    techStack: "",
+    completionDate: "",
+    projectRepo: "",
     additionalInfo: "",
   });
 
@@ -24,7 +27,7 @@ export default function SellNFTForm() {
   // Handle input change
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setNftData((prevData) => ({
+    setProjectData((prevData) => ({
       ...prevData,
       [name]: value,
     }));
@@ -59,106 +62,158 @@ export default function SellNFTForm() {
   };
   
   return (
-    <section className="flex justify-center items-center p-10 bg-[#110229]">
+    <section className="flex justify-center items-center p-10 min-h-screen bg-gradient-to-b from-gray-900 to-black">
       {isSubmitted ? (
         <div className="bg-white rounded-lg shadow-lg p-8 max-w-md w-full text-black text-center">
-          <h2 className="text-3xl font-semibold mb-4">Form Submitted Successfully!</h2>
-          <p className="mb-4">Thank you for submitting your NFT details.</p>
+          <h2 className="text-3xl font-semibold mb-4">Project Submitted Successfully!</h2>
+          <p className="mb-4">Thank you for submitting your project details.</p>
           <p className="text-gray-600">Redirecting to the landing page...</p>
         </div>
       ) : (
         <form 
           onSubmit={handleSubmit} 
-          className="bg-white rounded-lg shadow-lg p-8 max-w-md w-full"
+          className="bg-gray-800 rounded-lg shadow-lg p-8 max-w-2xl w-full text-white"
         >
-          <h2 className="text-3xl font-semibold mb-4 text-black text-center">Sell Your NFT</h2>
-          
-          <label className="block mb-2 text-black" htmlFor="title">Title</label>
+          <h2 className="text-3xl font-semibold mb-6 text-white text-center">Sell Your Project as an NFT</h2>
+
+          {/* Title */}
+          <label className="block mb-2 text-white" htmlFor="title">Project Title</label>
           <input 
             type="text" 
             name="title" 
             id="title" 
-            value={nftData.title} 
+            value={projectData.title} 
             onChange={handleChange} 
             required 
-            className="border border-gray-300 rounded p-2 mb-4 w-full text-black bg-white"
+            className="border border-gray-700 rounded p-3 mb-4 w-full text-white bg-gradient-to-r from-gray-700 to-gray-800 placeholder-gray-400"
+            placeholder="Enter the title of your project"
           />
 
-          <label className="block mb-2 text-black" htmlFor="description">Description</label>
+          {/* Description */}
+          <label className="block mb-2 text-white" htmlFor="description">Project Description</label>
           <textarea 
             name="description" 
             id="description" 
-            value={nftData.description} 
+            value={projectData.description} 
             onChange={handleChange} 
             required 
-            className="border border-gray-300 rounded p-2 mb-4 w-full text-black bg-white" 
+            className="border border-gray-700 rounded p-3 mb-4 w-full text-white bg-gradient-to-r from-gray-700 to-gray-800 placeholder-gray-400" 
             rows="4"
+            placeholder="Provide a brief description of your project"
           />
 
-          <label className="block mb-2 text-black" htmlFor="imageUrl">Image URL</label>
+          {/* Project URL */}
+          <label className="block mb-2 text-white" htmlFor="projectUrl">Live Project URL</label>
           <input 
             type="url" 
-            name="imageUrl" 
-            id="imageUrl" 
-            value={nftData.imageUrl} 
+            name="projectUrl" 
+            id="projectUrl" 
+            value={projectData.projectUrl} 
             onChange={handleChange} 
             required 
-            className="border border-gray-300 rounded p-2 mb-4 w-full text-black bg-white"
+            className="border border-gray-700 rounded p-3 mb-4 w-full text-white bg-gradient-to-r from-gray-700 to-gray-800 placeholder-gray-400"
+            placeholder="https://example.com"
           />
 
-          <label className="block mb-2 text-black" htmlFor="price">Price (in ETH)</label>
+          {/* Project Repository */}
+          <label className="block mb-2 text-white" htmlFor="projectRepo">Project Repository (GitHub/Bitbucket)</label>
+          <input 
+            type="url" 
+            name="projectRepo" 
+            id="projectRepo" 
+            value={projectData.projectRepo} 
+            onChange={handleChange} 
+            required 
+            className="border border-gray-700 rounded p-3 mb-4 w-full text-white bg-gradient-to-r from-gray-700 to-gray-800 placeholder-gray-400"
+            placeholder="https://github.com/username/repo"
+          />
+
+          {/* Price */}
+          <label className="block mb-2 text-white" htmlFor="price">Price (in ETH)</label>
           <input 
             type="number" 
             name="price" 
             id="price" 
-            value={nftData.price} 
+            value={projectData.price} 
             onChange={handleChange} 
             required 
-            className="border border-gray-300 rounded p-2 mb-4 w-full text-black bg-white"
+            className="border border-gray-700 rounded p-3 mb-4 w-full text-white bg-gradient-to-r from-gray-700 to-gray-800 placeholder-gray-400"
+            placeholder="Enter the price in ETH"
           />
 
-          <label className="block mb-2 text-black" htmlFor="royalties">Royalties (%)</label>
+          {/* Royalties */}
+          <label className="block mb-2 text-white" htmlFor="royalties">Royalties (%)</label>
           <input 
             type="number" 
             name="royalties" 
             id="royalties" 
-            value={nftData.royalties} 
+            value={projectData.royalties} 
             onChange={handleChange} 
             required 
-            className="border border-gray-300 rounded p-2 mb-4 w-full text-black bg-white"
+            className="border border-gray-700 rounded p-3 mb-4 w-full text-white bg-gradient-to-r from-gray-700 to-gray-800 placeholder-gray-400"
+            placeholder="Percentage of royalties"
           />
 
-          <label className="block mb-2 text-black" htmlFor="category">Category</label>
+          {/* Tech Stack */}
+          <label className="block mb-2 text-white" htmlFor="techStack">Tech Stack</label>
+          <input 
+            type="text" 
+            name="techStack" 
+            id="techStack" 
+            value={projectData.techStack} 
+            onChange={handleChange} 
+            required 
+            className="border border-gray-700 rounded p-3 mb-4 w-full text-white bg-gradient-to-r from-gray-700 to-gray-800 placeholder-gray-400"
+            placeholder="React, Node.js, Solidity, etc."
+          />
+
+          {/* Completion Date */}
+          <label className="block mb-2 text-white" htmlFor="completionDate">Completion Date</label>
+          <input 
+            type="date" 
+            name="completionDate" 
+            id="completionDate" 
+            value={projectData.completionDate} 
+            onChange={handleChange} 
+            required 
+            className="border border-gray-700 rounded p-3 mb-4 w-full text-white bg-gradient-to-r from-gray-700 to-gray-800"
+          />
+
+          {/* Category */}
+          <label className="block mb-2 text-white" htmlFor="category">Category</label>
           <select 
             name="category" 
             id="category" 
-            value={nftData.category} 
+            value={projectData.category} 
             onChange={handleChange} 
             required 
-            className="border border-gray-300 rounded p-2 mb-4 w-full text-black bg-white"
+            className="border border-gray-700 rounded p-3 mb-4 w-full text-white bg-gradient-to-r from-gray-700 to-gray-800"
           >
-            <option value="">Select a category</option>
-            <option value="art">Art</option>
-            <option value="music">Music</option>
-            <option value="collectibles">Collectibles</option>
-            <option value="photography">Photography</option>
+            <option value="" className="bg-gray-800 text-white">Select a category</option>
+            <option value="web" className="bg-gray-800 text-white">Web Development</option>
+            <option value="mobile" className="bg-gray-800 text-white">Mobile Development</option>
+            <option value="blockchain" className="bg-gray-800 text-white">Blockchain</option>
+            <option value="ai" className="bg-gray-800 text-white">Artificial Intelligence</option>
+            <option value="others" className="bg-gray-800 text-white">Others</option>
           </select>
 
-          <label className="block mb-2 text-black" htmlFor="additionalInfo">Additional Info</label>
+          {/* Additional Info */}
+          <label className="block mb-2 text-white" htmlFor="additionalInfo">Additional Info</label>
           <textarea 
             name="additionalInfo" 
             id="additionalInfo" 
-            value={nftData.additionalInfo} 
+            value={projectData.additionalInfo} 
             onChange={handleChange} 
-            className="border border-gray-300 rounded p-2 mb-4 w-full text-black bg-white" 
+            className="border border-gray-700 rounded p-3 mb-4 w-full text-white bg-gradient-to-r from-gray-700 to-gray-800 placeholder-gray-400" 
             rows="4"
+            placeholder="Add any additional information about the project"
           />
 
           <button 
             type="submit" 
-            className="w-full py-2 bg-gradient-to-r from-indigo-500 to-pink-500 text-white rounded hover:opacity-80 transition"
+            className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-purple-600 hover:to-blue-500 text-white font-semibold py-3 px-6 rounded-lg w-full transition duration-300 ease-in-out"
           >
-            Submit
+            Submit Project
           </button>
         </form>
       )}

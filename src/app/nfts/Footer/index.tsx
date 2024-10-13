@@ -101,7 +101,7 @@ export default function Footer() {
         </ul>
       </div>
       <div className="text-center mt-8 mb-4">
-        Kashish. All Rights Reserved 2023©
+         Kashish. All Rights Reserved 2024©
       </div>
     </footer>
   );

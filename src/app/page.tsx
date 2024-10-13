@@ -1,9 +1,9 @@
-import ComponySection from "@/components/home/ComponySection";
-import Contact from "@/components/home/Contact";
-import HotCollections from "@/components/home/HotCollections";
-import HowItWorks from "@/components/home/HowItWorks";
-import TopSeller from "@/components/home/TopSeller";
-import TreningAuctions from "@/components/home/TreningAuctions";
+import ComponySection from "@/app/components/home/ComponySection";
+import Contact from "@/app/components/home/Contact";
+import HotCollections from "@/app/components/home/HotCollections";
+import HowItWorks from "@/app/components/home/HowItWorks";
+import TopSeller from "@/app/components/home/TopSeller";
+import TreningAuctions from "@/app/components/home/TreningAuctions";
 import Image from "next/image";
 
 export default function Home() {

@@ -28,7 +28,7 @@ module MyNFTMarketplace::Project {
     }
 
     // Create an NFT collection
-    public fun create_collection(account: &signer, name: vector<u8>, description: vector<u8>, uri: vector<u8>, supply: u64)  {
+    public entry fun create_collection(account: &signer, name: vector<u8>, description: vector<u8>, uri: vector<u8>, supply: u64)  {
         let collection = MyNFTCollection { 
             name, 
             description, 
@@ -40,7 +40,7 @@ module MyNFTMarketplace::Project {
     }
 
     // Mint an NFT with a price
-    public fun mint_nft(account: &signer, name: vector<u8>, description: vector<u8>, uri: vector<u8>, price: u64) acquires MyNFTCollection{
+    public entry fun mint_nft(account: &signer, name: vector<u8>, description: vector<u8>, uri: vector<u8>, price: u64) acquires MyNFTCollection{
         let addr = signer::address_of(account);
 
         // Borrow the collection from storage
@@ -68,7 +68,7 @@ module MyNFTMarketplace::Project {
     }
 
     // Transfer an NFT with payment
-    public fun buy_nft(buyer: &signer, seller_address: address, token_id: u64, payment: u64) acquires MyNFT,{
+    public entry fun buy_nft(buyer: &signer, seller_address: address, token_id: u64, payment: u64) acquires MyNFT,{
 
         // Borrow the NFT to ensure it exists and check its ownership and price
         let nft_ref = borrow_global_mut<MyNFT>(seller_address);

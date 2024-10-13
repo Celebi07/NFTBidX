@@ -5,6 +5,7 @@ import HowItWorks from "@/app/components/home/HowItWorks";
 import TopSeller from "@/app/components/home/TopSeller";
 import TreningAuctions from "@/app/components/home/TreningAuctions";
 import Image from "next/image";
+import Collection from "./components/home/collection";
 
 export default function Home() {
   return (
@@ -54,6 +55,7 @@ export default function Home() {
           />
         </div>
       </section>
+      <Collection ></Collection>
       <ComponySection/>
       <HowItWorks />
       <TreningAuctions />

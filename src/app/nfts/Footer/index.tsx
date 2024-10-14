@@ -78,8 +78,8 @@ export default function Footer() {
         <ul className="flex flex-col gap-5 items-start max-w-sm max-sm:items-center">
           <li className="text-2xl mb-3">Newsletter</li>
           <li className="text-white/70">
-            Lorem ipsum dolor sit, amet enim non aspernatur, quas consequatur
-            minus et magnam placeat.
+            Stay updated with the latest NFT drops, marketplace news, and exclusive deals. 
+            Join our newsletter to never miss an opportunity!
           </li>
           <li className="flex gap-5">
             <a
@@ -101,7 +101,7 @@ export default function Footer() {
         </ul>
       </div>
       <div className="text-center mt-8 mb-4">
-        Denovin. All Rights Reserved 2023©
+         Kashish. All Rights Reserved 2024©
       </div>
     </footer>
   );

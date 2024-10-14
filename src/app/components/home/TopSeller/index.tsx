@@ -7,7 +7,9 @@ export default function TopSeller() {
   return (
     <section className="flex flex-col gap-5">
       <div className="flex justify-between items-center">
-        <h2 className="text-5xl" data-aos="fade-right" data-aos-once>Top Seller</h2>
+        <h2 className="text-5xl" data-aos="fade-right" data-aos-once>
+          Top Seller
+        </h2>
         <Link
          data-aos="fade-left" data-aos-once
           href={"/"}
@@ -25,8 +27,8 @@ export default function TopSeller() {
               height={100}
             />
             <div className="flex flex-col gap-1">
-              <span className="text-2xl">Alex Maverick</span>
-              <span className="text-white/80">400 artworks</span>
+              <span className="text-2xl">Samantha Hayes</span>
+              <span className="text-white/80">350 artworks</span>
             </div>
           </div>
           <div className="px-7 py-5 flex gap-2 items-center rounded-sm bg-gradient-to-r from-indigo-500/80 to-pink-500/80 w-full max-w-sm">
@@ -37,8 +39,8 @@ export default function TopSeller() {
               height={100}
             />
             <div className="flex flex-col gap-1">
-              <span className="text-2xl">Alex Maverick</span>
-              <span className="text-white/80">400 artworks</span>
+              <span className="text-2xl">Liam Johnson</span>
+              <span className="text-white/80">420 artworks</span>
             </div>
           </div>
           <div className="px-7 py-5 flex gap-2 items-center rounded-sm bg-gradient-to-r from-indigo-500/80 to-pink-500/80 w-full max-w-sm">
@@ -49,8 +51,8 @@ export default function TopSeller() {
               height={100}
             />
             <div className="flex flex-col gap-1">
-              <span className="text-2xl">Alex Maverick</span>
-              <span className="text-white/80">400 artworks</span>
+              <span className="text-2xl">Olivia Carter</span>
+              <span className="text-white/80">280 artworks</span>
             </div>
           </div>
         </div>
@@ -63,8 +65,8 @@ export default function TopSeller() {
               height={100}
             />
             <div className="flex flex-col gap-1">
-              <span className="text-2xl">Alex Maverick</span>
-              <span className="text-white/80">400 artworks</span>
+              <span className="text-2xl">Ethan Smith</span>
+              <span className="text-white/80">390 artworks</span>
             </div>
           </div>
           <div className="px-7 py-5 flex gap-2 items-center rounded-sm bg-gradient-to-r from-indigo-500/80 to-pink-500/80 w-full max-w-sm">
@@ -75,8 +77,8 @@ export default function TopSeller() {
               height={100}
             />
             <div className="flex flex-col gap-1">
-              <span className="text-2xl">Alex Maverick</span>
-              <span className="text-white/80">400 artworks</span>
+              <span className="text-2xl">Amelia Rose</span>
+              <span className="text-white/80">450 artworks</span>
             </div>
           </div>
           <div className="px-7 py-5 flex gap-2 items-center rounded-sm bg-gradient-to-r from-indigo-500/80 to-pink-500/80 w-full max-w-sm">
@@ -87,8 +89,8 @@ export default function TopSeller() {
               height={100}
             />
             <div className="flex flex-col gap-1">
-              <span className="text-2xl">Alex Maverick</span>
-              <span className="text-white/80">400 artworks</span>
+              <span className="text-2xl">James Blake</span>
+              <span className="text-white/80">320 artworks</span>
             </div>
           </div>
         </div>

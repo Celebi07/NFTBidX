@@ -10,8 +10,8 @@ export default function HowItWorks() {
           How it Works
         </h2>
         <p className="text-white/50" data-aos="fade-right" data-aos-delay="120" data-aos-once>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit amet. Lorem
-          ipsum dolor sit amet, consecte adipiscing elit ipsum.
+          Start trading and selling digital projects as NFTs on our marketplace.
+          Our platform makes it easy to set up, buy, and sell NFTs, giving you a secure and transparent way to manage digital assets.
         </p>
         <Link href="/nfts">
           <button className="px-7 py-2 rounded-sm bg-gradient-to-r from-indigo-500 to-pink-500 hover:opacity-80">
@@ -38,7 +38,7 @@ export default function HowItWorks() {
                 </button>
               </Link>
               <p className="text-white/70">
-                Lorem ipsum dolor sit amet, consectetur at adipiscing elit amet.
+                Connect your digital wallet to our platform to start trading and managing your NFT projects seamlessly.
               </p>
             </div>
           </div>
@@ -59,7 +59,7 @@ export default function HowItWorks() {
                 </button>
               </Link>
               <p className="text-white/70">
-                Lorem ipsum dolor sit amet, consectetur at adipiscing elit amet.
+                Explore and purchase exclusive NFT projects from our collection. Find the perfect digital assets to add to your portfolio.
               </p>
             </div>
           </div>
@@ -82,7 +82,7 @@ export default function HowItWorks() {
                 </button>
               </Link>
               <p className="text-white/70">
-                Lorem ipsum dolor sit amet, consectetur at adipiscing elit amet.
+                List your projects as NFTs and start earning by selling your digital assets to a global audience.
               </p>
             </div>
           </div>
@@ -93,7 +93,7 @@ export default function HowItWorks() {
                   src={"/images/icon4.png"}
                   alt="icon4"
                   width={200}
-                  height={200} 
+                  height={200}
                   quality={100}
                 />
               </span>
@@ -103,7 +103,7 @@ export default function HowItWorks() {
                 </button>
               </Link>
               <p className="text-white/70">
-                Lorem ipsum dolor sit amet, consectetur at adipiscing elit amet.
+                Upload and mint your projects into NFTs, making them available for trade and sale in our marketplace.
               </p>
             </div>
           </div>

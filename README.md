@@ -1,6 +1,8 @@
 # NFTBidX
 ---
 
+1. ![Image 1](./photos/2.jpg)
+
 # **NFT Marketplace for Software Engineering Projects**
 
 Welcome to the **NFT Marketplace**, a revolutionary platform designed for **developers** and **software engineers** to tokenize, showcase, and trade their software projects as **non-fungible tokens (NFTs)**. This marketplace aims to bridge the gap between the technical complexities of blockchain technology and the creation of valuable digital assets related to **innovative software solutions**.
@@ -110,6 +112,18 @@ The project follows a structured approach using **Next.js 14** and includes key 
 ├── db.js
 └── globals.css
 ```
+## **Image Gallery**
+
+Here are some sample screenshots and images related to the project:
+3. ![Image 3](./photos/3.jpg)
+2. ![Image 2](./photos/1.jpg)
+3. ![Image 3](./photos/3.jpg)
+4. ![Screenshot 1](./photos/Screenshot%202024-10-13%20183437.png)
+5. ![Screenshot 2](./photos/Screenshot%202024-10-13%20184418.png)
+6. ![Screenshot 3](./photos/Screenshot%202024-10-13%20184427.png)
+7. ![Screenshot 4](./photos/Screenshot%202024-10-13%20184437.png)
+8. ![Screenshot 5](./photos/Screenshot%202024-10-13%20184450.png)
+9. ![Screenshot 6](./photos/Screenshot%202024-10-13%20184457.png)
 
 We have also integrated [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) for optimized Google Fonts and enhanced performance.
 

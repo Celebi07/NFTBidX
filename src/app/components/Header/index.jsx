@@ -7,6 +7,7 @@ import { useRef } from "react";
 import { FaBars } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 import { useWallet } from "@aptos-labs/wallet-adapter-react";
+import Disconnect from "../home/functions/disconnect";
 
 const Header = () => {
    const {account} = useWallet();
@@ -147,9 +148,14 @@ const Header = () => {
           </li>
         </ul>
         <div className="max-md:hidden">
-        { account == null?
-          <WalletSelector></WalletSelector>
-          :<div>{account.address}</div>
+        {!account ? (
+  <WalletSelector></WalletSelector>
+) : (
+  <div className="flex items-center space-x-9">
+    <span>{`${account.address.slice(0, 2)}...${account.address.slice(-4)}`}</span>
+    <Disconnect></Disconnect>
+  </div>
+)
         
         }
         </div>

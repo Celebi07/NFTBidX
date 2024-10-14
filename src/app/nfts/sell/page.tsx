@@ -2,7 +2,11 @@
 
 import React, { useState } from "react";
 import { useRouter } from "next/navigation"; // Import useRouter for redirection
+import { InputTransactionData, useWallet } from "@aptos-labs/wallet-adapter-react";
+import { Aptos, AptosConfig, Network } from "@aptos-labs/ts-sdk";
 
+const aptosConfig = new AptosConfig({ network: Network.TESTNET });
+const aptos = new Aptos(aptosConfig);
 export default function SellNFTForm() {
   // State to manage form input
   const [nftData, setNftData] = useState({
@@ -14,15 +18,37 @@ export default function SellNFTForm() {
     category: "",
     additionalInfo: "",
   });
-
+  const {account,signAndSubmitTransaction} = useWallet();
   // State to manage success message
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   // Create a router instance for redirection
   const router = useRouter();
+  const mint_nft = async () => {
+    console.log(account?.address)
+      if (!account) return [];
+      console.log(account);
+      // change this to be your module account address
+      const moduleAddress = "0xdfcd9ed51f8097cb616646b7a8ce6f41f8d8f1f9ed056179d895d9b30c2f7bdc";
+      console.log("hey")
+      try{
+      const transaction:InputTransactionData = {
+        data: {
+          function:`${moduleAddress}::Project::mint_nft`,
+          functionArguments:[[1],[1],[1],1]
+        }
+      }
+      const response = await signAndSubmitTransaction(transaction);
+      // wait for transaction
+      await aptos.waitForTransaction({transactionHash:response.hash});
+      console.log(response);
+    }catch(e) {
+        console.log(e);
+    }
+    };
 
   // Handle input change
-  const handleChange = (e) => {
+  const handleChange = (e : any) => {
     const { name, value } = e.target;
     setNftData((prevData) => ({
       ...prevData,
@@ -31,12 +57,12 @@ export default function SellNFTForm() {
   };
 
   // Handle form submission
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e : any) => {
     e.preventDefault();
     
     // Simulate form submission logic (e.g., sending data to an API)
     console.log("NFT Data Submitted:", nftData);
-    
+    await mint_nft();
     // Set submitted state to true
     setIsSubmitted(true);
 

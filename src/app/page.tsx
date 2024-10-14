@@ -5,7 +5,8 @@ import HowItWorks from "@/app/components/home/HowItWorks";
 import TopSeller from "@/app/components/home/TopSeller";
 import TreningAuctions from "@/app/components/home/TreningAuctions";
 import Image from "next/image";
-import Collection from "./components/home/collection";
+import Collection from "./components/home/functions/collection";
+
 
 export default function Home() {
   return (
@@ -26,7 +27,7 @@ export default function Home() {
             </button>
             <button className="rounded-sm p-px bg-gradient-to-r from-indigo-500 to-pink-500">
               <div className="bg-[#110229] rounded-[calc(0.125rem-1px)] px-7 py-2 hover:bg-opacity-80">
-                Create
+                <Collection  />
               </div>
             </button>
           </div>
@@ -55,7 +56,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <Collection ></Collection>
+  
       <ComponySection/>
       <HowItWorks />
       <TreningAuctions />

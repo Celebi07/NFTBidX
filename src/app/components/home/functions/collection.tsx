@@ -2,18 +2,13 @@
 
 import { InputTransactionData, useWallet } from "@aptos-labs/wallet-adapter-react";
 import { Aptos, AptosConfig, Network } from "@aptos-labs/ts-sdk";
+import { useState } from "react";
  
 const aptosConfig = new AptosConfig({ network: Network.TESTNET });
 const aptos = new Aptos(aptosConfig);
 export default function Collection() {
     const {account,signAndSubmitTransaction} = useWallet();
-    const val = {
-        account : account,
-        name : 1,
-        description: 1,
-        uri: 1,
-        supply: 1
-    }
+    const [created, setCreated] = useState(false);
     const create_Collection = async () => {
         console.log(account?.address)
           if (!account) return [];
@@ -32,13 +27,13 @@ export default function Collection() {
           // wait for transaction
           await aptos.waitForTransaction({transactionHash:response.hash});
           console.log(response);
+          setCreated(true);
         }catch(e) {
             console.log(e);
         }
         };
     return (<button onClick={async() =>{ console.log("hey"); await create_Collection()}}>
-        {account?.address}
-        Create Collection
-    </button>)
+        {{created} ? "Collection Created": "Create Collection"}
+       </button>)
 
 }
